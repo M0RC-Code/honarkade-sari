@@ -1,0 +1,17 @@
+# Colors for project
+bgc = #F7F3ED
+bgc2 = #EDE3D5
+main-color = #5C4033 brown coffee
+main-color-2 = #35261F brown chaclete 
+im-color = #7A8062 green low
+im-color-2 = #B86F52 warm brown
+main-text = #292522 
+fail-text = #756D65 gray warm
+card-color = #FFFDFC
+border-color = D8CEC1
+
+# Sizing 
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)

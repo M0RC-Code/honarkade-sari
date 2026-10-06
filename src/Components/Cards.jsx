@@ -14,7 +14,49 @@ const Cards = () => {
                     <span className="card-offer">18٪</span>
                 </div>
                 <div className="card-content">
-                    <h3 className="card-title">دم کنی</h3>
+                    <h3 className="card-title">title</h3>
+                    <div className="card-prices">
+                        <span className="card-price-org">230,000 تومان</span>
+                        <span className="card-price">180,000 تومان</span>
+                    </div>
+                    <button className="card-button">
+                        <ShoppingCart size={15}/>
+                        افزودن به سبد
+                    </button>
+                </div>
+            </article>
+            <article className="card">
+                <div className="card-image-wrapper">
+                    <img
+                        src="../src/assets/images/image-2.jpg"
+                        alt="Error-img"
+                        className="card-image"
+                    />
+                    <span className="card-offer">18٪</span>
+                </div>
+                <div className="card-content">
+                    <h3 className="card-title">title</h3>
+                    <div className="card-prices">
+                        <span className="card-price-org">230,000 تومان</span>
+                        <span className="card-price">180,000 تومان</span>
+                    </div>
+                    <button className="card-button">
+                        <ShoppingCart size={15}/>
+                        افزودن به سبد
+                    </button>
+                </div>
+            </article>
+            <article className="card">
+                <div className="card-image-wrapper">
+                    <img
+                        src="../src/assets/images/image-3.jpg"
+                        alt="Error-img"
+                        className="card-image"
+                    />
+                    <span className="card-offer">18٪</span>
+                </div>
+                <div className="card-content">
+                    <h3 className="card-title">title</h3>
                     <div className="card-prices">
                         <span className="card-price-org">230,000 تومان</span>
                         <span className="card-price">180,000 تومان</span>

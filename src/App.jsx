@@ -1,6 +1,7 @@
 import './App.css'
 import Navigation from '../src/Components/Navigation.jsx'
-import {Home, Search} from "lucide-react"
+import Header from '../src/Components/Header.jsx'
+import {List} from "lucide-react"
 
 function App() {
 
@@ -8,16 +9,10 @@ function App() {
     <>
       <Navigation />
       <div className="container">
-        <header className="header-brand">
-          <img
-            src="../src/assets/images/head.jpg"
-            alt="honarkade sari"
-            className="header-image"
-          />
-        </header>
+        <Header />
         <main className="products-section">
           <div className="showcase">
-            <h2 className="showcase-title">لیست محصولات</h2>
+            <h2 className="showcase-title"><List />لیست محصولات</h2>
             <span className="showcase-line"></span>
           </div>
           <div className="cards">

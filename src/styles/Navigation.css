@@ -109,6 +109,10 @@
 
 /* Menu : Navigation Button */
 .option {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
     padding: 9px 13px;
 
     border: none;
@@ -149,15 +153,14 @@
 .option-about {
     color: #5C4033;
 }
-
 .option-about:hover {
     background-color: #EDE3D5;
 }
 
 /* Menu : logIn signUp */
 .option-logSign {
-    padding: 9px 16px;
 
+    padding: 9px 16px;
     background-color: #5C4033;
     color: #FFFDFC;
 

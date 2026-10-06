@@ -1,5 +1,6 @@
 import './App.css'
 import Navigation from '../src/Components/Navigation.jsx'
+import {Home, Search} from "lucide-react"
 
 function App() {
 

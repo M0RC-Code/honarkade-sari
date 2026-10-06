@@ -1,5 +1,5 @@
 import "/home/mardin/project/honarkadeh/src/styles/Navigation.css"
-import {Home, Search} from "lucide-react"
+import {Home, Search, LogOut} from "lucide-react"
 
 const Navigation = () => {
     return(
@@ -11,10 +11,9 @@ const Navigation = () => {
                     <input type="text" className="search-input"/>
                 </div>
                 <div className="options">
-                    <Home size={20}/>
-                    <button className="option-home option">Home</button>
+                    <button className="option-home option"><Home size={20}/>Home</button>
                     <button className="option-about option">About</button>
-                    <button className="option-logSign option">LogIn/SignUp</button>
+                    <button className="option-logSign option"><LogOut size={15}/>LogIn/SignUp</button>
                 </div>
             </div>
         </div>

@@ -67,7 +67,13 @@
     box-shadow: 0 0 0 3px rgba(122, 128, 98, 0.12);
 }
 
-
+.search-box-icon {
+    margin-left: 5px;
+    transition: ease all 200;
+}
+.search-box-icon:hover {
+    text-shadow: 1px 1px 1px brown;
+}
 /* Menu : search input */
 
 .search-input {

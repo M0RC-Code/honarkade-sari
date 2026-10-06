@@ -1,4 +1,5 @@
 import "/home/mardin/project/honarkadeh/src/styles/Navigation.css"
+import {Home, Search} from "lucide-react"
 
 const Navigation = () => {
     return(
@@ -6,9 +7,11 @@ const Navigation = () => {
             <div className="title">HONARKADE SARI</div>
             <div className="search-options">
                 <div className="search-box">
+                    <Search size={15} className="search-box-icon"/>
                     <input type="text" className="search-input"/>
                 </div>
                 <div className="options">
+                    <Home size={20}/>
                     <button className="option-home option">Home</button>
                     <button className="option-about option">About</button>
                     <button className="option-logSign option">LogIn/SignUp</button>

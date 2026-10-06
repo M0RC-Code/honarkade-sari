@@ -28,6 +28,11 @@ body {
     border-radius: 12px;
 }
 
+/* Container : cards */
+.cards {
+    display: flex;
+}
+
 /* Container : Showcase */
 .showcase { 
     display: flex;
@@ -36,11 +41,14 @@ body {
 .showcase-title {
     display: block;
 }
-
-/* Container : cards */
-.cards {
-    display: flex;
+.showcase-title::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: brown;
 }
+
+/* cards : card */
 .card {
     width: 500px;
     background-color: #FFFDFC;

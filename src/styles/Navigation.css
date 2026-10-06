@@ -173,3 +173,53 @@
 
     transform: translateY(-1px);
 }
+
+/* Navigation : Responsive */
+@media (max-width: 768px) {
+
+    .menu {
+        height: auto;
+        min-height: 65px;
+        padding: 12px 16px;
+
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .search-options {
+        gap: 8px;
+    }
+
+    .search-input {
+        width: 130px;
+    }
+
+    .option {
+        padding: 8px 9px;
+        font-size: 0.82rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .search-options {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .search-box {
+        flex: 1;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}

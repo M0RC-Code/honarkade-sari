@@ -43,79 +43,226 @@ body {
     border-bottom: 2px solid #292522;
 }
 
-/* cards : card */
+/* Container : Cards */
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  direction: rtl;
+}
+
+/* Cards : Card - Product Card */
 .card {
-    width: 500px;
-    background-color: #FFFDFC;
-    border-radius: 15px;
-    padding: 10px;
+  min-width: 0;
+  overflow: hidden;
+  margin-top: 20px;
+
+  background: #FFFDFC;
+  border: 1px solid #D8CEC1;
+  border-radius: 18px;
+
+  box-shadow: 0 6px 20px rgba(53, 38, 31, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  direction: rtl;
 }
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(53, 38, 31, 0.11);
+}
+
+/* Cards : Card - Product Image */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+  background: #EDE3D5;
+}
+
 .card-image {
-    width: 100%;
-    border-radius: 15px;
-}
-.card-title {
-    font-size: 1rem;
-}
-.card.price {
+  width: 100%;
+  height: 100%;
 
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
 }
+
+.card:hover .card-image {
+  transform: scale(1.035);
+}
+
+/* Cards : Card - Discount */
 .card-offer {
+  position: absolute;
+  top: 14px;
+  right: 14px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 46px;
+  height: 30px;
+  padding: 0 9px;
+
+  border-radius: 999px;
+
+  background: #B86F52;
+  color: #FFFDFC;
+
+  font-size: 0.82rem;
+  font-weight: 700;
 }
+
+/* Cards : Card - Card Content */
+.card-content {
+  padding: 18px 18px 20px;
+}
+
+/* Cards : Card - Product Title */
+.card-title {
+  margin: 0 0 14px;
+
+  color: #35261F;
+
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* Cards : Card - Prices */
+.card-prices {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+  margin-bottom: 18px;
+}
+
 .card-price-org {
+  color: #756D65;
 
+  font-size: 0.82rem;
+  text-decoration: line-through;
 }
+
+.card-price {
+  color: #5C4033;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+/* Cards : Card - Add To Cart Button */
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+  min-height: 44px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #5C4033;
+  color: #FFFDFC;
+
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card-button:hover {
+  background: #35261F;
+}
+
+.card-button:active {
+  transform: scale(0.98);
+}
+
 
 /* =========================
-   Responsive
+   Tablet
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    .menu {
-        height: auto;
-        min-height: 65px;
-        padding: 12px 16px;
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
 
-        gap: 15px;
-    }
-
-    .title {
-        font-size: 1.3rem;
-    }
-
-    .search-options {
-        gap: 8px;
-    }
-
-    .search-input {
-        width: 130px;
-    }
-
-    .option {
-        padding: 8px 9px;
-        font-size: 0.82rem;
-    }
 }
 
 
-@media (max-width: 550px) {
+/* =========================
+   Mobile
+========================= */
 
-    .menu {
-        flex-wrap: wrap;
-    }
+@media (max-width: 600px) {
 
-    .search-options {
-        width: 100%;
-        justify-content: flex-end;
-    }
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
 
-    .search-box {
-        flex: 1;
-    }
+  .card {
+    border-radius: 14px;
+  }
 
-    .search-input {
-        width: 100%;
-    }
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-title {
+    margin-bottom: 9px;
+    font-size: 0.95rem;
+  }
+
+  .card-prices {
+    margin-bottom: 12px;
+    gap: 2px;
+  }
+
+  .card-price-org {
+    font-size: 0.72rem;
+  }
+
+  .card-price {
+    font-size: 0.95rem;
+  }
+
+  .card-button {
+    min-height: 40px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .card-offer {
+    top: 9px;
+    right: 9px;
+
+    min-width: 40px;
+    height: 26px;
+
+    font-size: 0.72rem;
+  }
+
 }

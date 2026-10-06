@@ -1,3 +1,9 @@
+/* Add persian font: Vazir */
+@font-face {
+    font-family: "Vazir";
+    src: url("./assets/fonts/Vazir.ttf");
+}
+
 /* Intial style */
 * {
     box-sizing: border-box;
@@ -10,6 +16,7 @@ body {
 
 /* Container style */
 .container {
+    font-family: "Vazir";
     display: flex;
     flex-direction: column;
     width: 1200px;
@@ -30,7 +37,10 @@ body {
     direction: rtl;
 }
 .showcase-title {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 2px solid #292522;
 }
 
 /* cards : card */
